@@ -20,6 +20,6 @@ apps:
 parts:
     netdiscover:
         plugin: cmake
-        source: https://github.com/alexxy/netdiscover.git
+        source: .
         build-packages: [libpcap-dev, libnet1-dev ]
 
