@@ -15,3 +15,13 @@ CMakeFiles
 *.cmake
 CMakeCache.txt
 install_manifest.txt
+
+# snappy related
+parts
+stage
+prime
+snap/plugins/__pycache__
+snap/.snapcraft/
+*.snap
+*.tar*
+.project
