@@ -16,11 +16,21 @@ base: core18
 apps:
     netdiscover-ondra:
         command: netdiscover
-        plugs: [network, network-bind, network-control, network-observe, network-setup-observe, bluetooth-control]
+        plugs:
+            - network
+            - network-bind
+            - network-control
+            - network-observe
+            - network-setup-observe
+            - bluetooth-control
 
 parts:
     netdiscover:
         plugin: cmake
         source: .
-        build-packages: [libpcap-dev, libnet1-dev ]
+
+build-packages:
+    - libpcap-dev
+    - libnet1-dev
+
 
